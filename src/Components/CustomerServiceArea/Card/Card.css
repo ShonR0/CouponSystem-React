@@ -1,0 +1,22 @@
+.Card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size:large;
+    background: rgb(20,17,69);
+    background: linear-gradient(145deg, rgba(20, 17, 69, 0.754) 0%, rgba(9, 30, 121, 0.561) 17%, rgba(0, 153, 255, 0.321) 100%);
+    border-radius: 4px;
+    margin: 10px;
+    width: 350px;
+}
+
+.Card:hover { 
+    width: 370px; 
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px 1px rgb(14, 13, 36); 
+}
+
+.Card:not(hover) {
+    transition: 0.5s;
+}

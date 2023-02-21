@@ -1,0 +1,40 @@
+.Menu {
+    padding-top: 50px;
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+.Menu > a {
+    margin: 10px;
+    color: #F5EDCE;
+    padding-left: 20%;
+    padding-right: 20%;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+}
+
+.Menu > a:hover {
+    color: white;
+    text-decoration: none;
+    /* font-size: xx-large; */
+    transform: scale(1.1);
+    box-shadow: 14px 18px 12px 0px #21170d5b;
+    /* font-weight: 900; */
+}
+
+.Menu:hover {
+    backdrop-filter: blur(10px); 
+    background: rgba(170, 112, 64, 0.085);
+    box-shadow: 14px 18px 12px 0px #21170d5b;
+    transition: 1s;
+} 
+
+.Menu:not(hover){
+    transition: 0.5s;
+}

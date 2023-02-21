@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,1fr);
+  background-image: radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% );
+  animation: ShonShon 1s ;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App > .Header {
+  color: wheat;
+  grid-column: span 12;
+  grid-row: span 1;
+  background: rgb(223, 125, 5); 
+  background: rgba(255, 115, 0, 0.342);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App > .Menu {
+  grid-column: span 2;
+  grid-row: span 10;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App > .Main {
   color: white;
+  grid-column: span 10;
+  grid-row: span 10;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.App > .Footer {
+  background-color: #1A0000;
+  color: white;
+  grid-column: span 12;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@keyframes ShonShon {
+  0%   { background: radial-gradient( circle farthest-corner at 13.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  5%   { background: radial-gradient( circle farthest-corner at 19.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  10%   { background: radial-gradient( circle farthest-corner at 23.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  15%   { background: radial-gradient( circle farthest-corner at 33.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  20%   { background: radial-gradient( circle farthest-corner at 43.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  25%   { background: radial-gradient( circle farthest-corner at 53.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  30%   { background: radial-gradient( circle farthest-corner at 63.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  35%   { background: radial-gradient( circle farthest-corner at 68.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  40%   { background: radial-gradient( circle farthest-corner at 70.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  45%   { background: radial-gradient( circle farthest-corner at 72.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  50%   { background: radial-gradient( circle farthest-corner at 74.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  55%   { background: radial-gradient( circle farthest-corner at 78.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  60%   { background: radial-gradient( circle farthest-corner at 79.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  65%   { background: radial-gradient( circle farthest-corner at 80.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  70%   { background: radial-gradient( circle farthest-corner at 80.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  75%   { background: radial-gradient( circle farthest-corner at 81.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  80%   { background: radial-gradient( circle farthest-corner at 82.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  85%   { background: radial-gradient( circle farthest-corner at 83.0% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  90%   { background: radial-gradient( circle farthest-corner at 83.4% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  95%   { background: radial-gradient( circle farthest-corner at 83.6% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+  100%   { background: radial-gradient( circle farthest-corner at 83.7% 4.3%,  rgb(214, 89, 16) 0%, rgb(0, 0, 0) 90% ) }
+} 

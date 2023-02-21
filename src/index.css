@@ -1,13 +1,218 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: Rockwell;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 300px; 
+  height: 400px;
+}
+
+.card {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size:large;
+  background: rgb(20,17,69);
+  background: linear-gradient(145deg, rgba(20, 17, 69, 0.754) 0%, rgba(9, 30, 121, 0.561) 17%, rgba(0, 153, 255, 0.321) 100%);
+  border-radius: 4px;
+  margin: 10px;
+  width: 220px;
+}
+
+.card:hover {
+  width: 225px;
+  transition: 0.5s;
+  box-shadow: 5px 5px 10px 1px rgb(5, 36, 77);
+}
+
+.card:not(hover) {
+  transition: 0.5s;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form input[type="text"], input[type="datetime-local"]{
+  width: 200px;
+  height: 25px;
+}
+
+.chooseButton {
+  width: 70px;
+  height: 30px;
+  margin: 10px;
+  background-color: #66a3df17;
+  color: white;
+  font-size: large;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chooseButton:hover {
+  background-color: #82d142;
+  transition: 0.5s;
+}
+
+.chooseButton:not(:hover) {
+  background-color: #66a3df17;
+  transition: 0.5s;
+}
+
+.chooseButton:disabled {
+  cursor: not-allowed;
+  transition: 0.5s;
+  background-color: #2e588266;
+}
+
+input {
+  width: 240px;
+  height: 20px;
+}
+
+label {
+  margin: 6px;
+}
+
+.form {
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+form span {
+  color: red;
+  font-weight: 700;
+}
+
+.couponImg {
+  width: 100px;
+  height: 60px;
+}
+
+.addButton {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.addButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.addButton:active {
+  transform: scale(0.95);
+}
+
+.cancelButton {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #c02000 0%, #d52e2e  51%, #b9391f  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.cancelButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cancelButton:active {
+  transform: scale(0.95);
+}
+
+.editButton {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #71951d 0%, #13aa22  51%, #1e9345  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.editButton:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.editButton:active {
+  transform: scale(0.95);
+}
+
