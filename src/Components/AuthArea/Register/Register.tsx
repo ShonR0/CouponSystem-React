@@ -28,7 +28,7 @@ function Register(): JSX.Element {
                 .required("Password is required"),
         confirm:
             yup.string()
-            .oneOf([yup.ref('password')], 'Passwords must be match')
+            .oneOf([yup.ref('password'), null], 'Passwords must be match')
                 .required("Confirm is required"),
     });
     const { register, handleSubmit, formState: { errors, isDirty, isValid } } =

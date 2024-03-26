@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import * as yup from "yup";
-import { yupResolver } from "@hookform/resolvers/yup";
+// import { yupResolver } from "@hookform/resolvers/yup";
 import "./Login.css";
-import { useForm } from "react-hook-form";
+// import { useForm } from "react-hook-form";
 import { LoginModel, UserType } from "../../../Models/Auth";
 import webApi from "../../../Services/WebApi";
 import notify from "../../../Services/NotificationService";
@@ -10,6 +10,8 @@ import store from "../../../Redux/Store";
 import { loggedIn } from "../../../Redux/CustomerAppState";
 import { useState } from "react";
 import { CouponModel } from "../../../Models/Coupon";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 
 function Login(): JSX.Element {
 

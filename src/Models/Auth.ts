@@ -1,23 +1,25 @@
 import ShowCoupon from "../Components/CustomerServiceArea/ShowCoupon/ShowCoupon";
 
 export interface LoginModel {
-    email: string;
-    password: string;
+    email?: string;
+    password?: string;
 }
 
 export interface RegisterModel {
-    firstName: string;
-    lastName: string;
-    email: string;
-    password: string;
-    confirm: boolean;
+    firstName?: string;
+    lastName?: string;
+    email?: string;
+    password?: string;
+    // confirm?: boolean;
+    confirm?: string;
 }
 
 export interface RegisterCompanyModel {
-    name: string;
-    email: string;
-    password: string;
-    confirm: boolean;
+    name?: string;
+    email?: string;
+    password?: string;
+    // confirm?: boolean;
+    confirm?: string;
 }
 
 export interface Credentials {
